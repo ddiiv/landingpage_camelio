@@ -1,6 +1,7 @@
 import React from 'react';
 import "../css/NavBar.css"
 import logocn from "../img/camelialogo.png"
+
 const Navbar = () => {
 
     return (
