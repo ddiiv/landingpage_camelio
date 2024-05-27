@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
+
+body {
+
+    font-family: 'QuickSand', sans-serif;
+}
+
+.wrapper {
+    width: 95%;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+}
+.camellianaturalsLogo{
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+
+}
+header {
+    background: #506224 !important;
+    color: #ebebd3;
+    position: relative;
+    padding: 1em 0;
+}
+
+header::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.logo {
+    float: left;
+    font-size: 1rem;
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.logo span {
+    font-weight: 400;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+.main-nav-open {
+    height: auto;
+}
+
+.main-nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+
+
+.main-nav li:last-child {
+    border-bottom: none;
+}
+
+
+.main-nav a {
+    -webkit-transition: 0.5s all ease;
+    -moz-transition: 0.5s all ease;
+    transition: 0.5s all ease;
+    color: white;
+    display: block;
+    padding: 1em 1em;
+    text-decoration: none;
+    text-transform: capitalize;
+
+}
+
+.main-nav a:hover {
+    -webkit-transition: 0.5s all ease;
+    -moz-transition: 0.5s all ease;
+    transition: 0.5s all ease;
+    color: #ebebd3;
+    text-decoration: none;
+    font-weight: 600;
+    background-color: transparent;
+}
+
+.nav-icon {
+    display: inline-block;
+    font-size: 1.3em;
+    margin-right: .5em;
+    text-align: center;
+    width: 1.1em;
+    color: rgba(255, 255, 255, 0.45);
+}
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+    content: "";
+    display: block;
+    background: #ebebd3;
+    height: 3px;
+    width: 1.75em;
+    transition: all ease-in-out 500ms;
+}
+
+.hamburger::before {
+    transform: translateY(-6px);
+}
+
+.hamburger::after {
+    transform: translateY(3px);
+}
+
+.open .hamburger {
+    transform: rotate(45deg);
+}
+
+.open .hamburger::before {
+    opacity: 0;
+}
+
+.open .hamburger::after {
+    transform: rotate(90deg) translateY(3px);
+}
+
+@media screen and (max-width: 750px) {
+
+    
+    .main-nav {
+        display: none;
+
+    }
+    .menu-toggle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        padding: 1em;
+
+        top: 0.5em;
+        right: 0.2em;
+        cursor: pointer;
+    }
+
+}
+
+
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px / 1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    color: #81CD23;
+    -moz-osx-font-smoothing: grayscale;
+}
