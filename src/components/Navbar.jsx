@@ -11,20 +11,15 @@ const Navbar = () => {
                 </div>
                 <nav class="main-nav">
                     <ul>
-                        <li><a href="#"><i class="fa fa-home nav-icon"></i>Home</a></li>
-                        <li><a href="#"><i class="fa fa-info nav-icon"></i>Our Goal</a></li>
-                        <li><a href="#"><i class="fa fa-pencil nav-icon"></i>How</a></li>
-                        <li><a href="#"><i class="fa fa-envelope nav-icon"></i>Contact Us</a></li>
+                        <li><a href="/"><i class="fa fa-home nav-icon"></i>Home</a></li>
+                        <li><a href="/how"><i class="fa fa-pencil nav-icon"></i>How</a></li>
+                        <li><a href="/contactus"><i class="fa fa-envelope nav-icon"></i>Contact Us</a></li>
                     </ul>
-
                 </nav>
-
-                    <div class="menu-toggle">
-                        <div class="hamburger">
-
-                        </div>
+                <div class="menu-toggle">
+                    <div class="hamburger">
                     </div>
-
+                </div>
             </div>
         </header>
     );

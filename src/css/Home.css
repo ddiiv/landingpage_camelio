@@ -1,0 +1,17 @@
+.card-container-home{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.title-home{
+    margin: 2%;
+}
+
+.card-home{
+    padding: 2%;
+    width: 25%;
+    margin: 3%;
+    border: 1px solid #506224;
+}

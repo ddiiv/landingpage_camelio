@@ -1,18 +1,22 @@
-import Footer from './pages/Footer';
-import Navbar from './components/Navbar';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
+import Layout from './components/Layout';
+import Home from './pages/Home';
+import How from './pages/How';
+import ContactUs from './pages/ContactUs';
+
 
 function App() {
   return (
-    <div className="App">
-      <div className="page">
-        <Navbar />
-        <article className="MainContainer">
-        
-        </article>
-        <Footer />
-      </div>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Layout />}>
+          <Route index element={<Home/>}></Route>
+          <Route path='/how' element={<How/>}></Route>
+          <Route path='/contactus' element={<ContactUs/>}></Route>
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
