@@ -2,8 +2,20 @@ import React from 'react';
 import * as Yup from "yup"
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import "../css/ContactUs.css"
+import emailjs from '@emailjs/browser';   
 
 const ContactUs = () => {
+
+    function sendFormEmailJS(values)
+    {   
+        emailjs.send('service_qq178ce','template_qbn1ydp', values ,'xcRHBKxWKYAv5LJ5T')
+        .then((result) => {
+            console.log({values}) 
+            console.log(result.text);
+        }, (error) => {
+            console.log(error);
+        });
+    }
 
     const SignupSchema = Yup.object({
         Name: Yup.string()
@@ -28,6 +40,7 @@ const ContactUs = () => {
                 validationSchema={SignupSchema}
                 onSubmit={(values, { setSubmitting }) => {
                     setTimeout(() => {
+                        sendFormEmailJS(values)
                         alert(JSON.stringify(values, null, 2));
                         setSubmitting(false);
                     }, 400);
