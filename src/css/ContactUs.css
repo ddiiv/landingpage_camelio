@@ -14,14 +14,13 @@
     align-items: center;
     margin-top: 20px;
     margin-bottom: 20px;
-    color: white;
+    color: #506224;
 
 }
 
 .form-contact-grid {
     display: grid;
     grid-template-columns: repeat(1, 1fr) 2fr;
-
     grid-gap: 20px;
 }
 
@@ -53,7 +52,7 @@
     flex-direction: column;
     width: 100%;
     justify-content: start;
-    color: white;
+    color: #506224;
     height: 100%;
     max-height: 50vh;
 }
@@ -107,8 +106,8 @@
 .andres-button {
     width: 35%;
     padding: 10px 20px;
-    background-color: green;
-    color: white;
+    background-color: #506224;
+    color: #ededed;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -143,6 +142,17 @@ input[type=text] {
 }
 
 
-input[type=number] {
-    -moz-appearance: textfield;
+@media (max-width:600px){
+    .form-contact-grid{
+        display: inline;
+    }
+    .form-contact-grid-item.right{
+        padding: 0px;
+    }
+    .form-contact-grid-item.left{
+        padding: 0px;
+    }
+    .andres-button {
+        width: 100%;
+    }
 }

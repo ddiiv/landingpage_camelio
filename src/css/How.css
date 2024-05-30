@@ -1,35 +1,74 @@
-.card-container-how{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap');
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
 
 }
 
-.title-how{
-    margin: 2%;
+.container-how {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
-.card-how{
-    width: 20%;
-    margin: 2%;
-    border: 1px solid #506224;
+.title-how {
+    text-align: center;
+    color: #506224;
+    margin-bottom: 20px;
 }
 
-.title-card{
-    padding: 3% 1%;
-    height: 35%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: #506224;
-    color: #eee;
+.card-container-how {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) ;
+    -ms-grid-column-align: center;
+    gap: 20px;
+
 }
 
-.text-card-how{
-    padding: 7%;
+.card-how {
+    border: #506224 1px solid;
+    background-color: #B5C18E;
+    padding: 20px;
+    border-radius: 0; /* Bordes cuadrados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
 }
-.subtitle-how{
-    margin: 3% 10%;
-    padding: 2%;
-    border: 1px solid #506224 ;
+
+.title-card h4 {
+    margin: 0;
+    margin-bottom: 10px;
+    color: #506224;
+}
+
+.text-card-how p {
+    margin: 0;
+    color: #506224;
+}
+
+.subtitle-how {
+    text-align: center;
+    margin-top: 20px;
+    color: #506224;
+    margin-bottom: 20px;
+}
+
+.subtitle-how h4 {
+    margin: 0;
+}
+
+@media (max-width: 600px) {
+    .card-home {
+        width: 100%;
+    }
+    .card-container-how {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr) ;
+        -ms-grid-column-align: center;
+        gap: 20px;
+    
+    }
+    .subtitle-how h4{
+        text-align: left;
+    }
 }

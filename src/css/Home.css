@@ -1,17 +1,49 @@
-.card-container-home{
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap');
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #506224;
+}
+
+.container-home {
+    padding: 2rem;
+    background-color: #B5C18E;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.title-home {
+    color: #506224;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.card-container-home {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-.title-home{
-    margin: 2%;
+.card-home {
+    border: #506224 1px solid;
+    color: #506224;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+    padding: 20px;
+    flex: 1 1 calc(33% - 40px);
+    box-sizing: border-box;
+    min-width: 250px;
+    max-width: 300px;
 }
 
-.card-home{
-    padding: 2%;
-    width: 25%;
-    margin: 3%;
-    border: 1px solid #506224;
+.card-home h4 {
+    margin-top: 0;
+    font-size: 24px;
+}
+
+.card-home p {
+    font-size: 16px;
 }

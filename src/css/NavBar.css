@@ -136,6 +136,14 @@ header::after {
 .open .hamburger::after {
     transform: rotate(90deg) translateY(3px);
 }
+a.link-no{
+    color: #ebebd3;
+
+}
+a.link-no:hover{
+    color: #ebebd3;
+    text-decoration: none;
+}
 
 @media screen and (max-width: 750px) {
 

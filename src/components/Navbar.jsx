@@ -8,7 +8,7 @@ const Navbar = () => {
         <header>
             <div class="wrapper">
                 <div class="logo-container">
-                    <h1 class="logo"> <img src={logocn} alt="camellianaturalsLogo" className='camellianaturalsLogo' /> Camellia<span>Naturals</span></h1>
+                    <h1 class="logo"> <a href="/" className='link-no'><img src={logocn} alt="camellianaturalsLogo" className='camellianaturalsLogo' /> Camellia<span>Naturals</span></a></h1>
                 </div>
                 <nav class="main-nav">
                     <ul>
