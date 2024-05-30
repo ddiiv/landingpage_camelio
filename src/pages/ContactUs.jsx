@@ -2,19 +2,18 @@ import React from 'react';
 import * as Yup from "yup"
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import "../css/ContactUs.css"
-import emailjs from '@emailjs/browser';   
+import emailjs from '@emailjs/browser';
 
 const ContactUs = () => {
 
-    function sendFormEmailJS(values)
-    {   
-        emailjs.send('service_qq178ce','template_qbn1ydp', values ,'xcRHBKxWKYAv5LJ5T')
-        .then((result) => {
-            console.log({values}) 
-            console.log(result.text);
-        }, (error) => {
-            console.log(error);
-        });
+    function sendFormEmailJS(values) {
+        emailjs.send('service_qq178ce', 'template_qbn1ydp', values, 'xcRHBKxWKYAv5LJ5T')
+            .then((result) => {
+                console.log({ values })
+                console.log(result.text);
+            }, (error) => {
+                console.log(error);
+            });
     }
 
     const SignupSchema = Yup.object({
@@ -31,18 +30,18 @@ const ContactUs = () => {
             .required("Required")
             .max(250, "Must be 250 characters or less")
     })
-        ;
+
     return (
         <div className='pageContactUs-container'>
             <h1 className='contactus_title'>Contact Us</h1>
             <Formik
                 initialValues={{ Name: "", Email: null, PhoneNumber: null, Message: "" }}
                 validationSchema={SignupSchema}
-                onSubmit={(values, { setSubmitting }) => {
+                onSubmit={(values, { resetForm }) => {
                     setTimeout(() => {
                         sendFormEmailJS(values)
-                        alert(JSON.stringify(values, null, 2));
-                        setSubmitting(false);
+                        alert("Your message was sent successfully");
+                        resetForm();
                     }, 400);
                 }}
             >
