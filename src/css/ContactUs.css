@@ -1,0 +1,148 @@
+/* ContactUs.css */
+.pageContactUs-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+}
+
+.contactus_title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: white;
+
+}
+
+.form-contact-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr) 2fr;
+
+    grid-gap: 20px;
+}
+
+.form-contact-grid-item.right {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+
+
+}
+
+.form-contact-grid-item.left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Form row */
+.row-register-form {
+    margin-bottom: 20px;
+}
+
+/* Form control container */
+.andres-form-control__itemcontainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: start;
+    color: white;
+    height: 100%;
+    max-height: 50vh;
+}
+
+.andres-form-control--textfield.andes-form-control__field.right {
+
+    width: 100%;
+    height: 100%;
+
+
+}
+
+.andres-form-control__control.register {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+}
+
+/* Form control label */
+.andres-form-control__label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: flex;
+}
+
+/* Form control input */
+.andres-form-control--textfield {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+}
+
+/* Form control error icon */
+.andres-form-control__error-icon {
+    /* Add your error icon styles here */
+}
+
+/* Form control error message */
+.andres-form-control__message {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+/* Submit button */
+.andres-button {
+    width: 35%;
+    padding: 10px 20px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition-delay: 2s;
+    transition: ease-in-out 5s;
+    transition-duration: 0.5s;
+}
+
+.andres-button:hover {
+
+    background-color: darkgreen;
+    transform: scale(1.2);
+    transition-delay: 2s;
+    transition: ease-in-out 5s;
+    transition-duration: 1.2s;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+
+input[type=text] {
+    width: 100%;
+    height: 100%;
+    resize: none;
+    text-align: left;
+
+}
+
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
